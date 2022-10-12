@@ -2844,16 +2844,16 @@ func (f *Fpdf) write(h float64, txtStr string, link int, linkStr string) {
 		if l > wmax {
 			// Automatic line break
 			if sep == -1 {
-				if f.x > f.lMargin {
-					// Move to next line
-					f.x = f.lMargin
-					f.y += h
-					w = f.w - f.rMargin - f.x
-					wmax = (w - 2*f.cMargin) * 1000 / f.fontSize
-					i++
-					nl++
-					continue
-				}
+				//if f.x > f.lMargin {
+				//	// Move to next line
+				//	f.x = f.lMargin
+				//	f.y += h
+				//	w = f.w - f.rMargin - f.x
+				//	wmax = (w - 2*f.cMargin) * 1000 / f.fontSize
+				//	i++
+				//	nl++
+				//	continue
+				//}
 				if i == j {
 					i++
 				}
